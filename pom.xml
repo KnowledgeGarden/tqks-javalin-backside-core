@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.topicquests</groupId>
   <artifactId>tqks-javalin-backside-core</artifactId>
-  <version>0.2.0-SNAPSHOT</version>
+  <version>0.3.0-SNAPSHOT</version>
   <name>tqks-javalin-backside-core</name>
   <dependencies>
     <dependency>
@@ -10,11 +10,6 @@
         <artifactId>javalin</artifactId>
         <version>3.0.0</version>
     </dependency>
-    <dependency>
-    	<groupId>org.slf4j</groupId>
-    	<artifactId>slf4j-simple</artifactId>
-    	<version>1.7.26</version>
-	</dependency>
 	<dependency>
 	    <groupId>org.apache.velocity</groupId>
 	    <artifactId>velocity-engine-core</artifactId>
@@ -38,7 +33,7 @@
       <dependency>
       	<groupId>org.topicquests</groupId>
       	<artifactId>tq-support</artifactId>
-      	<version>1.8.0-SNAPSHOT</version>
+      	<version>3.0.0-SNAPSHOT</version>
       </dependency>
   </dependencies>
   <build>

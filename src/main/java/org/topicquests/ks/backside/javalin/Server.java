@@ -11,13 +11,12 @@ import org.topicquests.support.util.LoggingPlatform;
 
 import io.javalin.Javalin;
 import io.javalin.core.util.RouteOverviewPlugin;
-
+import org.tinylog.Logger;
 /**
  * @author jackpark
  *
  */
 public abstract class Server {
-	private LoggingPlatform logger;
 	private Map<String,Object>properties;
 	protected Javalin app = null;
 	
@@ -26,7 +25,6 @@ public abstract class Server {
 	 * 
 	 */
 	public Server() {
-		logger = LoggingPlatform.getInstance("logger.properties");
 		properties = Configurator.getProperties("javalin-server-props.xml");
 		String p = (String)properties.get("ServerPort");
 		int port = Integer.parseInt(p);
